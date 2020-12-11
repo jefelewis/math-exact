@@ -10,13 +10,13 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
   // Float: Number One
   if (numberOne.toString().indexOf('.') !== -1) {
     // Assign Decimal Places
-    numberOneDecimalPlaces = numberOne.toString().length - numberOne.toString().indexOf('.') - 1;
+    numberOneDecimalPlaces = numberOne.toString().length - 1 - numberOne.toString().indexOf('.');
   }
 
   // Float: Number Two
   if (numberTwo.toString().indexOf('.') !== -1) {
     // Assign Decimal Places
-    numberTwoDecimalPlaces = numberTwo.toString().length - numberTwo.toString().indexOf('.') - 1;
+    numberTwoDecimalPlaces = numberTwo.toString().length - 1 - numberTwo.toString().indexOf('.');
   }
 
   // Decimal Places: Equal
@@ -43,16 +43,15 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
-      return (numberOneInteger * numberTwoInteger) / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
+      // Integer Total
+      const integerTotal: number = numberOneInteger * numberTwoInteger;
+
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger / numberTwoInteger;
-
-      // Decimal Sum (Convert Back X Amount Of Decimal Places)
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      return numberOneInteger / numberTwoInteger;
     }
   }
   // Decimal Places: Number One Has More
@@ -87,12 +86,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger / numberTwoInteger;
-
-      // Decimal Sum (Convert Back X Amount Of Decimal Places)
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      return numberOneInteger / numberTwoInteger;
     }
   }
   // Decimal Places: Number Two Has More
@@ -114,7 +108,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       // Integer Total
       const integerTotal: number = numberOneInteger - numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places)
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
       return integerTotal / Math.pow(10, numberTwoDecimalPlaces);
     }
     // Math Type: Multiply
@@ -127,12 +121,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger / numberTwoInteger;
-
-      // Decimal Sum (Convert Back X Amount Of Decimal Places)
-      const decimalSum: number = integerSum / Math.pow(10, numberTwoDecimalPlaces);
-      return decimalSum;
+      return numberOneInteger / numberTwoInteger;
     }
   }
 };
