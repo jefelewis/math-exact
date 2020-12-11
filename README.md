@@ -63,6 +63,12 @@ mathExact('Divide', .02, 1.123); // .017809439002671415
 
 ## Changelog
 
+### [1.0.2] - 12/10/2020
+
+***Changed***
+
+- Updated README title & example code.
+
 ### [1.0.1] - 12/10/2020
 
 ***Changed***
