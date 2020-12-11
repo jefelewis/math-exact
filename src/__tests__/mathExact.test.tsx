@@ -133,12 +133,12 @@ describe('mathExact', () => {
     expect(mathExact('Multiply', 1.123, .002)).toEqual(.002246);
   });
 
-  // Test #26 (DIFFERENT LENGTHS)
+  // Test #26
   test('Test #26', () => {
     expect(mathExact('Multiply', 1.123, .02)).toEqual(.02246);
   });
 
-  // Test #27 (DIFFERENT LENGTHS)
+  // Test #27
   test('Test #27', () => {
     expect(mathExact('Multiply', 1.123, .2)).toEqual(.2246);
   });
@@ -148,16 +148,65 @@ describe('mathExact', () => {
     expect(mathExact('Multiply', .002, 1.123)).toEqual(.002246);
   });
 
-  // Test #29 (DIFFERENT LENGTHS)
+  // Test #29
   test('Test #29', () => {
     expect(mathExact('Multiply', .02, 1.123)).toEqual(.02246);
   });
 
-  // Test #30 (DIFFERENT LENGTHS)
+  // Test #30
   test('Test #30', () => {
     expect(mathExact('Multiply', .2, 1.123)).toEqual(.2246);
   });
 
 
   // MATH TYPE: DIVIDE
+  // Test #31
+  test('Test #31', () => {
+    expect(mathExact('Divide', 1, 2)).toEqual(.5);
+  });
+
+  // Test #32
+  test('Test #32', () => {
+    expect(mathExact('Divide', 10, 20)).toEqual(.5);
+  });
+
+  // Test #33
+  test('Test #33', () => {
+    expect(mathExact('Divide', 100, 200)).toEqual(.5);
+  });
+
+  // Test #34
+  test('Test #34', () => {
+    expect(mathExact('Divide', .1, .2)).toEqual(.5);
+  });
+
+  // Test #35
+  test('Test #35', () => {
+    expect(mathExact('Divide', 1.123, .002)).toEqual(561.5);
+  });
+
+  // Test #36
+  test('Test #36', () => {
+    expect(mathExact('Divide', 1.123, .02)).toEqual(56.15);
+  });
+
+  // Test #37
+  test('Test #37', () => {
+    expect(mathExact('Divide', 1.123, .2)).toEqual(5.615);
+  });
+
+  // Test #38
+  test('Test #38', () => {
+    expect(mathExact('Divide', .002, 1.123)).toEqual(.0017809439002671415850400712377560106856634016028495102404274265360641139804096170970614425645592163846838824577025823686553873552983081032947462154942119323241317898486197684772929652715939447907390917);
+  });
+
+  // Test #39
+  test('Test #39', () => {
+    expect(mathExact('Divide', .02, 1.123)).toEqual(.017809439002671415850400712377560106856634016028495102404274265360641139804096170970614425645592163846838824577025823686553873552983081032947462154942119323241317898486197684772929652715939447907390917);
+  });
+
+  // Test #40
+  test('Test #40', () => {
+    expect(mathExact('Divide', .2, 1.123)).toEqual(.17809439002671415850400712377560106856634016028495102404274265360641139804096170970614425645592163846838824577025823686553873552983081032947462154942119323241317898486197684772929652715939447907390917);
+  });
 });
