@@ -27,37 +27,30 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
 
     // Math Type: Add
     if (mathType === 'Add') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger + numberTwoInteger;
+      // Integer Total
+      const integerTotal: number = numberOneInteger + numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
     }
     // Math Type: Subtract
     else if (mathType === 'Subtract') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger - numberTwoInteger;
+      // Integer Total
+      const integerTotal: number = numberOneInteger - numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger * numberTwoInteger;
-
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      return (numberOneInteger * numberTwoInteger) / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
       // Integer Sum
       const integerSum: number = numberOneInteger / numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
+      // Decimal Sum (Convert Back X Amount Of Decimal Places)
       const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
       return decimalSum;
     }
@@ -70,37 +63,30 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
 
     // Math Type: Add
     if (mathType === 'Add') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger + numberTwoInteger;
+      // Integer Total
+      const integerTotal: number = numberOneInteger + numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
     }
     // Math Type: Subtract
     else if (mathType === 'Subtract') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger - numberTwoInteger;
+      // Integer Total
+      const integerTotal: number = numberOneInteger - numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger * numberTwoInteger;
-
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
-      return decimalSum;
+      return (numberOneInteger * numberTwoInteger) / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
       // Integer Sum
       const integerSum: number = numberOneInteger / numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
+      // Decimal Sum (Convert Back X Amount Of Decimal Places)
       const decimalSum: number = integerSum / Math.pow(10, numberOneDecimalPlaces);
       return decimalSum;
     }
@@ -113,37 +99,30 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
 
     // Math Type: Add
     if (mathType === 'Add') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger + numberTwoInteger;
+      // Integer Total
+      const integerTotal: number = numberOneInteger + numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberTwoDecimalPlaces);
-      return decimalSum;
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberTwoDecimalPlaces);
     }
     // Math Type: Subtract
     else if (mathType === 'Subtract') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger - numberTwoInteger;
+      // Integer Total
+      const integerTotal: number = numberOneInteger - numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberTwoDecimalPlaces);
-      return decimalSum;
+      // Decimal Sum (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberTwoDecimalPlaces);
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
-      // Integer Sum
-      const integerSum: number = numberOneInteger * numberTwoInteger;
-
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
-      const decimalSum: number = integerSum / Math.pow(10, numberTwoDecimalPlaces);
-      return decimalSum;
+      return (numberOneInteger * numberTwoInteger) / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
       // Integer Sum
       const integerSum: number = numberOneInteger / numberTwoInteger;
 
-      // Decimal Sum (Convert Back X Amount Of Decimal Places
+      // Decimal Sum (Convert Back X Amount Of Decimal Places)
       const decimalSum: number = integerSum / Math.pow(10, numberTwoDecimalPlaces);
       return decimalSum;
     }
