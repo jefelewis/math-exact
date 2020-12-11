@@ -1,4 +1,4 @@
-# Math Exact
+# Math Exact (Floating Point Math)
 
 [![npm version](https://badge.fury.io/js/math-exact.svg)](https://badge.fury.io/js/math-exact)
 [![npm downloads](https://img.shields.io/npm/dm/math-exact.svg)](https://www.npmjs.com/package/math-exact)
@@ -32,45 +32,33 @@ npm i math-exact
 **Add:**
 ```javascript
 mathExact('Add', 1, 2); // 3
-
 mathExact('Add', .1, .2);  // .3
-
 mathExact('Add', 1.123, .2);  // 1.323
-
 mathExact('Add', .02, 1.123); // 1.143
 ```
 
 **Subtract:**
 ```javascript
 mathExact('Subtract', 1, 2): // -1
-
 mathExact('Subtract', .1, .2);  // -.1
-
 mathExact('Subtract', 1.123, .2);  // .923
-
 mathExact('Subtract', .02, 1.123); // -1.103
 ```
 
 **Multiply:**
 ```javascript
-mathExact('Add', 1, 2); // 2
-
-mathExact('Add', .1, .2);  // .02
-
-mathExact('Add', 1.123, .2);  // .2246
-
-mathExact('Add', .02, 1.123); // .002246
+mathExact('Multiply', 1, 2); // 2
+mathExact('Multiply', .1, .2);  // .02
+mathExact('Multiply', 1.123, .2);  // .2246
+mathExact('Multiply', .02, 1.123); // .002246
 ```
 
 **Divide:**
 ```javascript
-mathExact('Add', 1, 2); // .5
-
-mathExact('Add', .1, .2);  // .5
-
-mathExact('Add', 1.123, .2);  // 5.615
-
-mathExact('Add', .02, 1.123); // .017809439002671415
+mathExact('Divide', 1, 2); // .5
+mathExact('Divide', .1, .2);  // .5
+mathExact('Divide', 1.123, .2);  // 5.615
+mathExact('Divide', .02, 1.123); // .017809439002671415
 ```
 
 ## Changelog
