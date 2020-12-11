@@ -31,6 +31,9 @@ npm i math-exact
 ## Example Code
 **Add:**
 ```javascript
+// Imports: Dependencies
+import { mathExact } from 'math-exact';
+
 mathExact('Add', 1, 2); // 3
 mathExact('Add', .1, .2);  // .3
 mathExact('Add', 1.123, .2);  // 1.323
@@ -39,6 +42,9 @@ mathExact('Add', .02, 1.123); // 1.143
 
 **Subtract:**
 ```javascript
+// Imports: Dependencies
+import { mathExact } from 'math-exact';
+
 mathExact('Subtract', 1, 2): // -1
 mathExact('Subtract', .1, .2);  // -.1
 mathExact('Subtract', 1.123, .2);  // .923
@@ -47,6 +53,9 @@ mathExact('Subtract', .02, 1.123); // -1.103
 
 **Multiply:**
 ```javascript
+// Imports: Dependencies
+import { mathExact } from 'math-exact';
+
 mathExact('Multiply', 1, 2); // 2
 mathExact('Multiply', .1, .2);  // .02
 mathExact('Multiply', 1.123, .2);  // .2246
@@ -55,6 +64,9 @@ mathExact('Multiply', .02, 1.123); // .002246
 
 **Divide:**
 ```javascript
+// Imports: Dependencies
+import { mathExact } from 'math-exact';
+
 mathExact('Divide', 1, 2); // .5
 mathExact('Divide', .1, .2);  // .5
 mathExact('Divide', 1.123, .2);  // 5.615
@@ -62,6 +74,13 @@ mathExact('Divide', .02, 1.123); // .017809439002671415
 ```
 
 ## Changelog
+
+### [1.0.3] - 12/11/2020
+
+***Changed***
+
+- Fixed build file issue.
+- Updated README example code.
 
 ### [1.0.2] - 12/10/2020
 
