@@ -12,7 +12,6 @@
 
 ## Features
 *  ✅ Built with TypeScript
-*  ✅ Built with React Hooks
 *  ✅ Tested with Jest
 
 ## Built With
