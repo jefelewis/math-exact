@@ -107,4 +107,57 @@ describe('mathExact', () => {
   });
 
 
+  // MATH TYPE: MULTIPLY
+  // Test #21
+  test('Test #21', () => {
+    expect(mathExact('Multiply', 1, 2)).toEqual(2);
+  });
+
+  // Test #22
+  test('Test #22', () => {
+    expect(mathExact('Multiply', 10, 20)).toEqual(200);
+  });
+
+  // Test #23
+  test('Test #23', () => {
+    expect(mathExact('Multiply', 100, 200)).toEqual(20000);
+  });
+
+  // Test #24
+  test('Test #24', () => {
+    expect(mathExact('Multiply', .1, .2)).toEqual(.02);
+  });
+
+  // Test #25
+  test('Test #25', () => {
+    expect(mathExact('Multiply', 1.123, .002)).toEqual(.002246);
+  });
+
+  // Test #26 (DIFFERENT LENGTHS)
+  test('Test #26', () => {
+    expect(mathExact('Multiply', 1.123, .02)).toEqual(.02246);
+  });
+
+  // Test #27 (DIFFERENT LENGTHS)
+  test('Test #27', () => {
+    expect(mathExact('Multiply', 1.123, .2)).toEqual(.2246);
+  });
+
+  // Test #28
+  test('Test #28', () => {
+    expect(mathExact('Multiply', .002, 1.123)).toEqual(.002246);
+  });
+
+  // Test #29 (DIFFERENT LENGTHS)
+  test('Test #29', () => {
+    expect(mathExact('Multiply', .02, 1.123)).toEqual(.02246);
+  });
+
+  // Test #30 (DIFFERENT LENGTHS)
+  test('Test #30', () => {
+    expect(mathExact('Multiply', .2, 1.123)).toEqual(.2246);
+  });
+
+
+  // MATH TYPE: DIVIDE
 });
