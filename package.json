@@ -1,6 +1,6 @@
 {
   "name": "math-exact",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "Precision math for JavaScript/TypeScript",
