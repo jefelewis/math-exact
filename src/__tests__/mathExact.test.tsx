@@ -3,7 +3,7 @@ const { mathExact } = require('../mathExact');
 
 // Math Exact
 describe('mathExact', () => {
-  // ADDITION
+  // MATH TYPE: ADD
   // Test #1
   test('Test #1', () => {
     expect(mathExact('Add', 1, 2)).toEqual(3);
@@ -39,6 +39,21 @@ describe('mathExact', () => {
     expect(mathExact('Add', 1.123, .2)).toEqual(1.323);
   });
 
+  // Test #8
+  test('Test #8', () => {
+    expect(mathExact('Add', .002, 1.123)).toEqual(1.125);
+  });
 
-  // SUBTRACTION
+  // Test #9
+  test('Test #9', () => {
+    expect(mathExact('Add', .02, 1.123)).toEqual(1.143);
+  });
+
+  // Test #10
+  test('Test #10', () => {
+    expect(mathExact('Add', .2, 1.123)).toEqual(1.323);
+  });
+
+
+  // MATH TYPE: SUBTRACT
 });
