@@ -11,8 +11,8 @@
 *  [Changelog](#changelog)
 
 ## Features
-*  ✅ Built with TypeScript
-*  ✅ Tested with Jest
+✅ Built with TypeScript
+✅ Tested with Jest
 
 ## Built With
 * [TypeScript](https://github.com/microsoft/TypeScript) - Programming Language
