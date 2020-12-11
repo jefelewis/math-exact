@@ -31,7 +31,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger + numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
+      return Number((integerTotal / Math.pow(10, numberOneDecimalPlaces)).toFixed(15));
     }
     // Math Type: Subtract
     else if (mathType === 'Subtract') {
@@ -39,7 +39,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger - numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
+      return Number((integerTotal / Math.pow(10, numberOneDecimalPlaces)).toFixed(15));
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
@@ -47,7 +47,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger * numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
+      return Number((integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces)).toFixed(15));
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
@@ -66,7 +66,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger + numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
+      return Number((integerTotal / Math.pow(10, numberOneDecimalPlaces)).toFixed(15));
     }
     // Math Type: Subtract
     else if (mathType === 'Subtract') {
@@ -74,7 +74,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger - numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberOneDecimalPlaces);
+      return Number((integerTotal / Math.pow(10, numberOneDecimalPlaces)).toFixed(15));
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
@@ -82,7 +82,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger * numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces + (numberOneDecimalPlaces - numberTwoDecimalPlaces));
+      return Number((integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces + (numberOneDecimalPlaces - numberTwoDecimalPlaces))).toFixed(15));
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
@@ -101,7 +101,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger + numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberTwoDecimalPlaces);
+      return Number((integerTotal / Math.pow(10, numberTwoDecimalPlaces)).toFixed(15));
     }
     // Math Type: Subtract
     else if (mathType === 'Subtract') {
@@ -109,7 +109,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger - numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberTwoDecimalPlaces);
+      return Number((integerTotal / Math.pow(10, numberTwoDecimalPlaces)).toFixed(15));
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
@@ -117,7 +117,7 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
       const integerTotal: number = numberOneInteger * numberTwoInteger;
 
       // Decimal Total (Convert Back X Amount Of Decimal Places)
-      return integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces + (numberTwoDecimalPlaces - numberOneDecimalPlaces));
+      return Number((integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces + (numberTwoDecimalPlaces - numberOneDecimalPlaces))).toFixed(15));
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
