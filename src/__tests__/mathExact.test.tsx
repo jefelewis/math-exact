@@ -88,7 +88,7 @@ describe('mathExact', () => {
 
   // Test #17
   test('Test #17', () => {
-    expect(mathExact('Subtract', 1.123, .2)).toEqual(0.923);
+    expect(mathExact('Subtract', 1.123, .2)).toEqual(.923);
   });
 
   // Test #18
