@@ -1,7 +1,7 @@
 # Math Exact
 
-<!-- [![npm version](https://badge.fury.io/js/react-native-ultimate-modal-picker.svg)](https://badge.fury.io/js/react-native-ultimate-modal-picker)
-[![npm downloads](https://img.shields.io/npm/dm/react-native-ultimate-modal-picker.svg)](https://www.npmjs.com/package/react-native-ultimate-modal-picker) -->
+[![npm version](https://badge.fury.io/js/math-exact.svg)](https://badge.fury.io/js/math-exact)
+[![npm downloads](https://img.shields.io/npm/dm/math-exact.svg)](https://www.npmjs.com/package/math-exact)
 
 *  [Features](#features)
 *  [Built With](#built-with)
@@ -29,10 +29,54 @@ npm i math-exact
 
 
 ## Example Code
+**Add:**
 ```javascript
+mathExact('Add', 1, 2); // 3
 
+mathExact('Add', .1, .2);  // .3
+
+mathExact('Add', 1.123, .2);  // 1.323
+
+mathExact('Add', .02, 1.123); // 1.143
 ```
 
+**Subtract:**
+```javascript
+mathExact('Subtract', 1, 2): // -1
+
+mathExact('Subtract', .1, .2);  // -.1
+
+mathExact('Subtract', 1.123, .2);  // .923
+
+mathExact('Subtract', .02, 1.123); // -1.103
+```
+
+**Multiply:**
+```javascript
+mathExact('Add', 1, 2); // 2
+
+mathExact('Add', .1, .2);  // .02
+
+mathExact('Add', 1.123, .2);  // .2246
+
+mathExact('Add', .02, 1.123); // .002246
+```
+
+**Divide:**
+```javascript
+mathExact('Add', 1, 2); // .5
+
+mathExact('Add', .1, .2);  // .5
+
+mathExact('Add', 1.123, .2);  // 5.615
+
+mathExact('Add', .02, 1.123); // .017809439002671415
+```
 
 ## Changelog
 
+### [1.0.1] - 12/10/2020
+
+***Changed***
+
+- Updated README example code.
