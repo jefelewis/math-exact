@@ -1,0 +1,27 @@
+{
+  "name": "math-exact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jefelewis/math-exact.git"
+  },
+  "author": "Jeff Lewis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jefelewis/math-exact/issues"
+  },
+  "homepage": "https://github.com/jefelewis/math-exact#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.4.4"
+  },
+  "dependencies": {
+    "typescript": "^4.1.2"
+  }
+}
