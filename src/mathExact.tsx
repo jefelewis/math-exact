@@ -79,7 +79,11 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
-      return (numberOneInteger * numberTwoInteger) / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
+      // Integer Total
+      const integerTotal: number = numberOneInteger * numberTwoInteger;
+
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces + (numberOneDecimalPlaces - numberTwoDecimalPlaces));
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
@@ -115,7 +119,11 @@ export const mathExact = (mathType: MathType, numberOne:number , numberTwo: numb
     }
     // Math Type: Multiply
     else if (mathType === 'Multiply') {
-      return (numberOneInteger * numberTwoInteger) / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces);
+      // Integer Total
+      const integerTotal: number = numberOneInteger * numberTwoInteger;
+
+      // Decimal Total (Convert Back X Amount Of Decimal Places)
+      return integerTotal / Math.pow(10, numberOneDecimalPlaces + numberTwoDecimalPlaces + (numberTwoDecimalPlaces - numberOneDecimalPlaces));
     }
     // Math Type: Divide
     else if (mathType === 'Divide') {
