@@ -75,6 +75,12 @@ mathExact('Divide', .02, 1.123); // .017809439002671415
 
 ## Changelog
 
+### [1.0.4] - 12/11/2020
+
+***Changed***
+
+- Changed decimal points from 17 to 15.
+
 ### [1.0.3] - 12/11/2020
 
 ***Changed***
