@@ -5,9 +5,6 @@
   "types": "dist/index.d.ts",
   "description": "Precision math for JavaScript/TypeScript",
   "repository": "https://github.com/jefelewis/math-exact.git",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/jefelewis"
-  },
   "author": "Jeff Lewis",
   "license": "MIT",
   "keywords": [
